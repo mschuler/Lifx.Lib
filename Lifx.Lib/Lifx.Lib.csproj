@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{152BAC69-4205-4466-845A-F1739EB95357}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Lifx.Lib</RootNamespace>
+    <AssemblyName>Lifx.Lib</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile151</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessPoint.cs" />
+    <Compile Include="BulbGroup.cs" />
+    <Compile Include="IColor.cs" />
+    <Compile Include="ColorBase.cs" />
+    <Compile Include="HslColor.cs" />
+    <Compile Include="LifxNetwork.cs" />
+    <Compile Include="LifxNetworkBulbExtensions.cs" />
+    <Compile Include="LifxNetworkExtensions.cs" />
+    <Compile Include="LifxNetworkGroupExtensions.cs" />
+    <Compile Include="LifxNetworkWaveFormExtensions.cs" />
+    <Compile Include="RgbColor.cs" />
+    <Compile Include="Utils\GatewayComparer.cs" />
+    <Compile Include="Utils\GroupExtensions.cs" />
+    <Compile Include="IAccessPoint.cs" />
+    <Compile Include="IBulbGroup.cs" />
+    <Compile Include="Packets\AnswerPacketBase.cs" />
+    <Compile Include="Bulb.cs" />
+    <Compile Include="BulbTimeInfo.cs" />
+    <Compile Include="BulbVersion.cs" />
+    <Compile Include="Utils\StringExtensions.cs" />
+    <Compile Include="Utils\ByteArrayComparer.cs" />
+    <Compile Include="Packets\PacketBase.cs" />
+    <Compile Include="Packets\CommandPacketBase.cs" />
+    <Compile Include="Enums\AnswerType.cs" />
+    <Compile Include="Enums\CommandType.cs" />
+    <Compile Include="Enums\Interface.cs" />
+    <Compile Include="Enums\ResetSwitchPosition.cs" />
+    <Compile Include="Enums\SecurityProtocol.cs" />
+    <Compile Include="Enums\TransportProtocol.cs" />
+    <Compile Include="Enums\WaveformType.cs" />
+    <Compile Include="Enums\WifiStatus.cs" />
+    <Compile Include="Gateway.cs" />
+    <Compile Include="GatewayService.cs" />
+    <Compile Include="HexExtensions.cs" />
+    <Compile Include="HsvColor.cs" />
+    <Compile Include="IBulb.cs" />
+    <Compile Include="IGateway.cs" />
+    <Compile Include="ILifxNetwork.cs" />
+    <Compile Include="LifxNetworkFactory.cs" />
+    <Compile Include="MeshInfo.cs" />
+    <Compile Include="PacketFactory.cs" />
+    <Compile Include="Packets\AccessPoint.cs" />
+    <Compile Include="Packets\BulbLabel.cs" />
+    <Compile Include="Packets\GetPanGateway.cs" />
+    <Compile Include="Packets\GetTagLabels.cs" />
+    <Compile Include="Packets\GetWifiState.cs" />
+    <Compile Include="Packets\Info.cs" />
+    <Compile Include="Packets\LightStatus.cs" />
+    <Compile Include="Packets\McuRailVoltage.cs" />
+    <Compile Include="Packets\MeshFirmwareState.cs" />
+    <Compile Include="Packets\MeshInfo.cs" />
+    <Compile Include="Packets\PanGateWay.cs" />
+    <Compile Include="Packets\PowerState.cs" />
+    <Compile Include="Packets\ResetSwitchState.cs" />
+    <Compile Include="Packets\SetAccessPoint.cs" />
+    <Compile Include="Packets\SetBulbLabel.cs" />
+    <Compile Include="Packets\SetFactoryTestMode.cs" />
+    <Compile Include="Packets\SetLightColor.cs" />
+    <Compile Include="Packets\SetPowerState.cs" />
+    <Compile Include="Packets\SetTagLabels.cs" />
+    <Compile Include="Packets\SetTags.cs" />
+    <Compile Include="Packets\SetTime.cs" />
+    <Compile Include="Packets\SetWaveForm.cs" />
+    <Compile Include="Packets\SetWifiState.cs" />
+    <Compile Include="Packets\TagLabels.cs" />
+    <Compile Include="Packets\Tags.cs" />
+    <Compile Include="Packets\TimeState.cs" />
+    <Compile Include="Packets\VersionState.cs" />
+    <Compile Include="Packets\WifiFirmwareState.cs" />
+    <Compile Include="Packets\WifiInfo.cs" />
+    <Compile Include="Packets\WifiState.cs" />
+    <Compile Include="Packets\ZeroPayloadCommand.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Timestamp.cs" />
+    <Compile Include="WifiInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
