@@ -11,5 +11,10 @@ namespace Lifx.Lib
         string Name { get; }
         HsvColor Color { get; }
         bool IsPowerOn { get; }
+
+        BulbVersion Version { get; set; }
+        BulbTimeInfo TimeInfo { get; set; }
+        MeshInfo MeshInfo { get; set; }
+        WifiInfo WifiInfo { get; set; }
     }
 }

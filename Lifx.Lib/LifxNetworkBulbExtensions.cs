@@ -36,6 +36,17 @@ namespace Lifx.Lib
             ((Bulb)bulb).Name = name;
         }
 
+        public static void ReadBulbInfo(this ILifxNetwork network, IBulb bulb)
+        {
+            ((LifxNetwork)network).SendCommand(bulb, PacketFactory.GetCommand(CommandType.GetInfo));
+            ((LifxNetwork)network).SendCommand(bulb, PacketFactory.GetCommand(CommandType.GetMeshFirmware));
+            ((LifxNetwork)network).SendCommand(bulb, PacketFactory.GetCommand(CommandType.GetMeshInfo));
+            ((LifxNetwork)network).SendCommand(bulb, PacketFactory.GetCommand(CommandType.GetTime));
+            ((LifxNetwork)network).SendCommand(bulb, PacketFactory.GetCommand(CommandType.GetVersion));
+            ((LifxNetwork)network).SendCommand(bulb, PacketFactory.GetCommand(CommandType.GetWifiFirmwareState));
+            ((LifxNetwork)network).SendCommand(bulb, PacketFactory.GetCommand(CommandType.GetWifiInfo));
+        }
+
         private static void SetPowerState(ILifxNetwork network, IBulb bulb, bool isPowerOn)
         {
             var command = (SetPowerState)PacketFactory.GetCommand(CommandType.SetPowerState);
