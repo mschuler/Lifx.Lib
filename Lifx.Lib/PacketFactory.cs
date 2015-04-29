@@ -87,6 +87,12 @@ namespace Lifx.Lib
                 command.Protocol = PacketBase.CommandProtocol;
             }
 
+            //if (command.Type == CommandType.SetPowerState ||
+            //    command.Type == CommandType.SetLightColor)
+            //{
+            //    command.Protocol = PacketBase.BulbCommand;
+            //}
+
             return command;
         }
 

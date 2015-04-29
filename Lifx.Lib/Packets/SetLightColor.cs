@@ -37,6 +37,7 @@ namespace Lifx.Lib.Packets
             payload[0] = _stream;
             Array.Copy(GetBytes(_hue, 360), 0, payload, 1, 2);
             Array.Copy(GetBytes(_saturation, 100), 0, payload, 3, 2);
+            //Array.Copy(GetBytes(_brightness, 100), 0, payload, 5, 2);
             Array.Copy(GetBytes(_brightness), 0, payload, 5, 2);
             Array.Copy(BitConverter.GetBytes(_kelvin), 0, payload, 7, 2);
             Array.Copy(BitConverter.GetBytes(_fadeTime), 0, payload, 9, 4);

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lifx.Lib", "Lifx.Lib\Lifx.L
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lifx.Lib.Tests", "Lifx.Lib.Tests\Lifx.Lib.Tests.csproj", "{6158C47A-5D76-438D-899B-11B5DDE4AB60}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lifx.ConsoleTest", "Lifx.ConsoleTest\Lifx.ConsoleTest.csproj", "{D456C9A0-A44B-4AC9-8F41-009B27C589A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6158C47A-5D76-438D-899B-11B5DDE4AB60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6158C47A-5D76-438D-899B-11B5DDE4AB60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6158C47A-5D76-438D-899B-11B5DDE4AB60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D456C9A0-A44B-4AC9-8F41-009B27C589A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D456C9A0-A44B-4AC9-8F41-009B27C589A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D456C9A0-A44B-4AC9-8F41-009B27C589A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D456C9A0-A44B-4AC9-8F41-009B27C589A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

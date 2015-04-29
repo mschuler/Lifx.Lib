@@ -11,6 +11,7 @@ namespace Lifx.Lib.Packets
         //// https://github.com/mpapi/lazylights/blob/master/lazylights.py
         public const ushort DiscoveryProtocol = 0x5400;
         public const ushort CommandProtocol = 0x3400;
+        public const ushort BulbCommand = 0x1400;
 
         protected PacketBase()
         {
