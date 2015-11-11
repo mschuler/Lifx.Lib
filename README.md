@@ -72,3 +72,7 @@ Usage
 	
 	_network.SwitchOn(bulb);
 	_network.SwitchOff(bulb);
+
+# License
+
+Developed by [Michael Schuler](https://www.michaelschuler.ch) under the [MIT License](LICENSE)
